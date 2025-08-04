@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Gmail Downloader",
+  "version": "1.0",
+  "description": "Скачивает прочитанные письма в Gmail",
+  "permissions": ["scripting", "tabs"],
+  "host_permissions": ["https://mail.google.com/*"],
+  "action": {
+    "default_title": "Скачать письма"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
